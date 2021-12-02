@@ -1,0 +1,79 @@
+package cn.vesns.pojo;/**
+ * @version :JDK1.8
+ * @date : 2021-12-03 0:12
+ * @author : vip865047755@126.com
+ * @File : ResponseResult.java
+ * @software: IntelliJ IDEA
+ */
+
+/**
+ * @author: vesns vip865047755@126.com
+ * @Title: ResponseResult
+ * @ProjectName: cloud-tensquare
+ * @Description:
+ * @date: 2021-12-03 0:12
+ */
+public class ResponseResult {
+    private boolean flag;
+    private Integer code;
+    private String message;
+    private Object data;
+
+    public ResponseResult() {
+    }
+
+    public ResponseResult(boolean flag, Integer code, String message) {
+        this.flag = flag;
+        this.code = code;
+        this.message = message;
+    }
+
+    public ResponseResult(boolean flag, Integer code, String message, Object data) {
+        this.flag = flag;
+        this.code = code;
+        this.message = message;
+        this.data = data;
+    }
+
+    public boolean isFlag() {
+        return flag;
+    }
+
+    public void setFlag(boolean flag) {
+        this.flag = flag;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public Object getData() {
+        return data;
+    }
+
+    public void setData(Object data) {
+        this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "ResponseResult{" +
+                "flag=" + flag +
+                ", code=" + code +
+                ", message='" + message + '\'' +
+                ", data=" + data +
+                '}';
+    }
+}
