@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Bean;
  * @date: 2021-12-03 0:31
  */
 @SpringBootApplication
-//@MapperScan("cn.vesns.article.mapper")
+@MapperScan("cn.vesns.article.mapper")
 public class CloudArticleApplication {
     public static void main(String[] args) {
         SpringApplication.run(CloudArticleApplication.class,args);
