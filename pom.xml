@@ -12,6 +12,7 @@
         <module>cloud-tensquare-common</module>
         <module>cloud-tensquare-article</module>
         <module>mongo_demo</module>
+        <module>cloud-tensquare-user</module>
     </modules>
 
 

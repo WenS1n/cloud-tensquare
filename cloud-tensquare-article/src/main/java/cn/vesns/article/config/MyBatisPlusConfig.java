@@ -1,4 +1,4 @@
-package cn.vesns.article;
+package cn.vesns.article.config;
 
 import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
 import org.springframework.context.annotation.Bean;

@@ -77,7 +77,7 @@ public class MongoTest {
      */
     @Test
     public void test2() {
-        BasicDBObject bson = new BasicDBObject("_id","1");
+        BasicDBObject bson = new BasicDBObject("articleId","123");
         FindIterable<Document> documents = comment.find(bson);
         for (Document document : documents) {
             System.out.println("------------------------------");
@@ -94,9 +94,10 @@ public class MongoTest {
     @Test
     public void test3() {
         HashMap<String, Object> map = new HashMap<>();
-        map.put("_id","6");
-        map.put("content","新增测试");
-        map.put("userid","1019");
+        map.put("_id","9");
+        map.put("content","测试文章评论数量");
+        map.put("articleId","123");
+        map.put("userid","1020");
         map.put("thumbup","666");
         Document document = new Document(map);
         comment.insertOne(document);

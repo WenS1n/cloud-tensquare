@@ -1,28 +1,20 @@
 server:
-  port: 9004
+  port: 9008
 spring:
   application:
     name: cloud-tensquare-article
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/tensquare_article?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/tensquare_user?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
-  data:
-    mongodb:
-      host: 127.0.0.1
-      port: 27017
-      database: commentdb
-  redis:
-    host: 127.0.0.1
-    port: 6379
 
 
 mybatis-plus:
   #  mapper-locations: classpath:/mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: cn.vesns.article.pojo
+  typeAliasesPackage: cn.vesns.user.pojo
   global-config:
     id-type: 1  #0:数据库ID自增   1:用户输入id
     db-column-underline: false
