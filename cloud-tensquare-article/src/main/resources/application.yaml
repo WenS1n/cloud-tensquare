@@ -9,6 +9,11 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: commentdb
 
 mybatis-plus:
   #  mapper-locations: classpath:/mapper/*Mapper.xml

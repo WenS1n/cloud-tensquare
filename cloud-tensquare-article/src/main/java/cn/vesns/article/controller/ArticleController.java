@@ -23,6 +23,7 @@ import java.util.List;
  * @Description:
  * @date: 2021-12-03 1:04
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/article")
 public class ArticleController {
